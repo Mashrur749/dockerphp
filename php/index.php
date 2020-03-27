@@ -11,8 +11,9 @@ if($conn->connect_error){
     echo 'connecting failed ' . $conn->connect_error;
 }
 
-echo 'successfully connected to mysql'
-
+echo json_encode(array(
+    "res" => "php response"
+))
 
 
 ?>
